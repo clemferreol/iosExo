@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791290211F7FA3CF009C6ADE /* Exercice_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791290201F7FA3CF009C6ADE /* Exercice_4.swift */; };
+		791290231F7FB9B4009C6ADE /* Exercice_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791290221F7FB9B4009C6ADE /* Exercice_5.swift */; };
 		79923D7F1F73EB2F000202BE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79923D7E1F73EB2F000202BE /* main.swift */; };
+		79923D871F73F46C000202BE /* Exercice_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79923D861F73F46C000202BE /* Exercice_1.swift */; };
+		79923D891F73F542000202BE /* Exercice_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79923D881F73F542000202BE /* Exercice_2.swift */; };
+		79C34C0B1F7CE5CD00B819C6 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C34C0A1F7CE5CD00B819C6 /* Vehicule.swift */; };
+		79C34C0D1F7CEB7E00B819C6 /* Exercice_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C34C0C1F7CEB7E00B819C6 /* Exercice_3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		791290201F7FA3CF009C6ADE /* Exercice_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercice_4.swift; sourceTree = "<group>"; };
+		791290221F7FB9B4009C6ADE /* Exercice_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercice_5.swift; sourceTree = "<group>"; };
 		79923D7B1F73EB2F000202BE /* project1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = project1; sourceTree = BUILT_PRODUCTS_DIR; };
 		79923D7E1F73EB2F000202BE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		79923D861F73F46C000202BE /* Exercice_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercice_1.swift; sourceTree = "<group>"; };
+		79923D881F73F542000202BE /* Exercice_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercice_2.swift; sourceTree = "<group>"; };
+		79C34C0A1F7CE5CD00B819C6 /* Vehicule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
+		79C34C0C1F7CEB7E00B819C6 /* Exercice_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercice_3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,23 @@
 		79923D7D1F73EB2F000202BE /* project1 */ = {
 			isa = PBXGroup;
 			children = (
+				79923D851F73EBAC000202BE /* Exercices */,
 				79923D7E1F73EB2F000202BE /* main.swift */,
+				79C34C0A1F7CE5CD00B819C6 /* Vehicule.swift */,
 			);
 			path = project1;
+			sourceTree = "<group>";
+		};
+		79923D851F73EBAC000202BE /* Exercices */ = {
+			isa = PBXGroup;
+			children = (
+				79923D861F73F46C000202BE /* Exercice_1.swift */,
+				79923D881F73F542000202BE /* Exercice_2.swift */,
+				79C34C0C1F7CEB7E00B819C6 /* Exercice_3.swift */,
+				791290201F7FA3CF009C6ADE /* Exercice_4.swift */,
+				791290221F7FB9B4009C6ADE /* Exercice_5.swift */,
+			);
+			name = Exercices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +146,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791290231F7FB9B4009C6ADE /* Exercice_5.swift in Sources */,
 				79923D7F1F73EB2F000202BE /* main.swift in Sources */,
+				79C34C0D1F7CEB7E00B819C6 /* Exercice_3.swift in Sources */,
+				79923D891F73F542000202BE /* Exercice_2.swift in Sources */,
+				79923D871F73F46C000202BE /* Exercice_1.swift in Sources */,
+				791290211F7FA3CF009C6ADE /* Exercice_4.swift in Sources */,
+				79C34C0B1F7CE5CD00B819C6 /* Vehicule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +284,7 @@
 				79923D841F73EB2F000202BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

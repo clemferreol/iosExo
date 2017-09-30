@@ -8,5 +8,35 @@
 
 import Foundation
 
-print("Hello, World!")
+/***** EXERCICE_1 *****/
+
+print(condog(str: "suis", prefix: "y", suffix: "je"))
+
+/***** EXERCICE_2 *****/
+
+
+print(cleanHobbits(arr:["Frodo", "Aragorn","Boromir", "Legolas","Gimli", "Gandalf", "Samsaget"] ))
+
+
+/***** EXERCICE_3 *****/
+
+let personne = Person.init(firstname: "Clémentine", lastname: "Ferréol", gender: .Female, email: "cleol@gmail.fr", birthdate: (date: "1992/02/14", format: "YYY/MM/DD"))
+
+let personne2 = Person.init(firstname: "Jade", lastname: "Ferréol", gender: .Female, email: "jadeol@gmail.com", birthdate: "21/02/1989".toDate(format: "DD/MM/YYYY"))
+
+print(personne.show())
+
+print(personne2.show())
+
+
+
+/***** EXERCICE_4 *****/
+
+
+let apiManager = ApiManager(baseURL: "https://api.randomuser.me/")
+
+
+
+
+
 
