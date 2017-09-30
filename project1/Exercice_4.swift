@@ -18,8 +18,8 @@ class ApiManager {
     var baseURL: String
     
     func getRandomUser(completion: @escaping (Any) -> Void) {
-        let urlString = URL(string: self.baseURL)
-        if let url = urlString {
+        let request = URL(string: self.baseURL)
+        if let url = request {
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if error != nil {
                     print(error ?? "error")
@@ -27,7 +27,6 @@ class ApiManager {
                     if let usableData = data {
                         let json = try? JSONSerialization.jsonObject(with: usableData, options: [])
                         completion(json!)
-                        print(json)
                     }
                 }
             }
