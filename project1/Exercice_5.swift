@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+extension ApiManager {
+    func getRandomUserHydratedWithPerson(completion: @escaping (Person) -> Void){
+        let api = ApiManager.init(baseURL:  "https://api.randomuser.me/")
+        
+        api.getRandomUser(completion: { data in
+            let result = data as! [String:Any]
+        
+        })
+    }
+}

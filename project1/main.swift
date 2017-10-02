@@ -26,6 +26,7 @@ let personne2 = Person.init(firstname: "Jade", lastname: "Ferréol", gender: .Fe
 
 print(personne.show())
 
+
 print(personne2.show())
 
 
@@ -43,4 +44,9 @@ apiManager.getRandomUser(completion: { data in
 })
 
 
+/***** EXERCICE_5 *****/
 
+apiManager.getRandomUserHydratedWithPerson(completion: { data in
+    //person.show()
+    print(data)
+})
