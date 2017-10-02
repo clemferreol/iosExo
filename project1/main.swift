@@ -33,10 +33,10 @@ print(personne2.show())
 /***** EXERCICE_4 *****/
 
 
-let apiManager = ApiManager(baseURL: "https://api.randomuser.me/")
-
-
-
+let apiManager = ApiManager.init(baseURL: "https://api.randomuser.me/")
+print(apiManager.getRandomUser(completion: {data in
+    print(data)
+}))
 
 
 

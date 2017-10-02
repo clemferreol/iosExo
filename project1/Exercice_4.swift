@@ -11,70 +11,52 @@ import Foundation
 
 class ApiManager {
     
+    var baseURL: String
+    
     init(baseURL: String) {
         self.baseURL = baseURL
     }
     
-    var baseURL: String
-    
     func getRandomUser(completion: @escaping (Any) -> Void) {
-        let request = URL(string: self.baseURL)
-        if let url = request {
-            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                if error != nil {
-                    print(error ?? "error")
-                } else {
-                    if let usableData = data {
-                        let json = try? JSONSerialization.jsonObject(with: usableData, options: [])
-                        completion(json!)
-                    }
-                }
+        
+        var request = URLRequest(url: URL(string: self.baseURL)!)
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { data, response, err in
+            
+            do {
+                print(1)
+                completion(data!)
+            } catch let error as NSError {
+                print(error)
             }
-            task.resume()
-        }
+            
+            }.resume()
+        
     }
 }
     
+
     
-    /*v
-    
+
  
- 
- 
- 
- 
- func getRandomUser(completion: @escaping (Any) -> Void) {
- let urlString = URL(string: self.baseURL)
- if let url = urlString {
+ /*func getRandomUser(completion: @escaping (Any) -> Void) {
+ let request = URL(string: self.baseURL)
+ if let url = request {
  let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+ print(data)
  if error != nil {
  print(error ?? "error")
  } else {
+ print(1)
  if let usableData = data {
  let json = try? JSONSerialization.jsonObject(with: usableData, options: [])
  completion(json!)
+ print(json)
+ 
  }
  }
  }
  task.resume()
  }
- 
- 
- 
- 
- func callbackLogic(country: String, completion: @escaping (Any) -> Void) -> String {
- 
- var request = URLRequest(url: URL(string: "https://restcountries.eu/rest/v2/alpha/\(country)")!)
- request.httpMethod = "GET"
- 
- URLSession.shared.dataTask(with: request) { data, response, err in
- 
- do {
- completion(data!)
- } catch let error as NSError {
- print(error)
- }
- 
- }.resume()
- 
  }*/
