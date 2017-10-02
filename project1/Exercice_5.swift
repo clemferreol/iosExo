@@ -14,6 +14,8 @@ extension ApiManager {
         
         api.getRandomUser(completion: { data in
             let result = data as! [String:Any]
+            let name = result["name"] as! String
+            let person =
         
         })
     }
