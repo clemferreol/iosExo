@@ -34,9 +34,13 @@ print(personne2.show())
 
 
 let apiManager = ApiManager.init(baseURL: "https://api.randomuser.me/")
-print(apiManager.getRandomUser(completion: {data in
+/*print(apiManager.getRandomUser(completion: {data in
     print(data)
-}))
+}))*/
+
+apiManager.getRandomUser(completion: { data in
+    print(data)
+})
 
 
 
