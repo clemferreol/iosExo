@@ -25,13 +25,13 @@ class ModalViewController: UIViewController {
         super.viewWillAppear(animated)
     
     
-    /*UserDefaults.standard.setValue(self.person?.firstname, forKey: "firstname")
+    UserDefaults.standard.setValue(self.person?.firstname, forKey: "firstname")
     UserDefaults.standard.setValue(self.person?.lastname, forKey: "lastname")
     UserDefaults.standard.setValue(self.person?.birthdate.toString(format: "dd/MM/YYY"), forKey: "age")
     UserDefaults.standard.setValue(self.person?.email.description, forKey: "email")
     UserDefaults.standard.setValue(self.person?.gender.rawValue, forKey: "gender")
     UserDefaults.standard.setValue(self.person?.photo, forKey: "photo")
-    print("\(UserDefaults.standard.value(forKey:"photo") ?? "default")")*/
+    print("\(UserDefaults.standard.value(forKey:"photo") ?? "default")") // Enregistrement dans le cache ne marche pas sans ça
 
     
     
